@@ -2,8 +2,17 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   title: 'zyy 的主页',
-  description: '课程笔记、项目与个人介绍',
+  description: '课程笔记、开源项目与个人介绍',
   lang: 'zh-CN',
+  head: [
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
+    ['meta', { name: 'theme-color', content: '#1273c4' }],
+    ['meta', { property: 'og:title', content: 'zyy 的主页' }],
+    ['meta', { property: 'og:description', content: '课程笔记、开源项目（小鲸鱼桌宠）与个人介绍' }],
+    ['meta', { property: 'og:url', content: 'https://zyyzyyzyy97.github.io/' }],
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { name: 'twitter:card', content: 'summary' }],
+  ],
   // 重要：部署到 https://用户名.github.io/仓库名/ 时，改成 '/仓库名/'
   // 若用 用户名.github.io 这个仓库（根域名），保持 '/'
   base: '/',
@@ -39,6 +48,10 @@ export default defineConfig({
     returnToTopLabel: '回到顶部',
     sidebarMenuLabel: '菜单',
     darkModeSwitchLabel: '主题',
-    lastUpdatedText: '最后更新'
+    lastUpdatedText: '最后更新',
+    footer: {
+      message: '用好奇心驱动 · 🐋',
+      copyright: '© 2026 zyy · 开源作品见 GitHub'
+    }
   }
 })

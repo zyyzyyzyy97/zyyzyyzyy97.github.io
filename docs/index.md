@@ -27,3 +27,12 @@ features:
     details: 正在学的东西、正在折腾的事与联系方式。
     link: /about
 ---
+
+## 精选项目
+
+<ProjectGrid :limit="3" />
+
+<p style="text-align:right">
+  <a href="/projects" style="font-weight:600">查看全部项目 →</a>
+</p>
+
